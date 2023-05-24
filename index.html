@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h4 style="font-weight: 600; color: #3d3d3d;">Camper</h4>
+            <form class="col s12" id="formCamper">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Placeholder" id="first_name" type="text" class="validate"  name="nombre" value="Edgar Mantilla">
+                        <label for="first_name" >Nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate"  name="usuario" value="emantilla">
+                        <label for="last_name" >Usuario</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="email" value="eduardoma876@gmail.com" name="email" class="validate">
+                        <label for="last_name" >Email</label>
+                    </div>
+                    <div class="col s12">
+                        <button class="waves-effect waves-light btn" type="submit">Agregar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col s12">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Usuario</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+
+                <tbody id="dataCampers">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
